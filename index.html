@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개인 과제</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <input type="text" id="todoTitleInput" placeholder="제목" />
+    <input type="text" id="todoContentInput" placeholder="내용" />
+    <button onclick="addTodo()">제출</button>
+    <h2>Working</h2>
+    <ul id="workingList"></ul>
+    <h2>Done!</h2>
+    <ul id="doneList"></ul>
+
+    <script>
+      function addTodo() {
+        //제목 아이디 가져오고
+        const todoTitleInput = document.getElementById("todoTitleInput");
+        //내용 가져오고
+        const todoContentInput = document.getElementById("todoContentInput");
+        //제목 아이디 내용 가져오고
+        const title = todoTitleInput.value.trim();
+        //내용 값 가져오고
+        const content = todoContentInput.value.trim();
+      }
+      // 값을 가져와서  workingList에 추가하고 완료버튼을 누르면 doneList에 넣어야 하는데...
+    </script>
+  </body>
+</html>
